@@ -4,13 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
         <h1 class="header"> Let`s explorer Berlin together!</h1>
     </header>
+    <!-- start cont div -->
+    <div class="container">
+	<nav>
+        <div class="logo">Let's Explore Berlin Together!</div>
+      
+        <div class="navbar">
+          <ul class="nav-menu">
+            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">SignUp</a></li>
+          </ul>
+        </div>
+      
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+      </div> 
+<!-- end of container div -->
+    
+    <!--   slider-->
+
+    
+    <div id="slider">
+    <figure>
+    <img src="assets/111.jpg" alt>
+    <img src="assets/222.jpg" alt>
+    <img src="assets/333.jpg" alt>
+    <img src="assets/444.JPG" alt>
+    <img src="assets/555.jpg" alt>
+    </figure>
+    </div>
 <h1 class ="main">Welcome to Berlin: Your Guide to the City </h1>
 <div class="container">
     <div class="floatTop">
@@ -55,9 +91,8 @@
         <p><span>Embark on a Journey Through a Parallel Cosmos:</span>Experience the Fusion of Light, Movement, and Sound in DARK MATTER.</p>
         <!-- how to make part of the text italic?  use <span></span> --> 
     </p>
-
     </div>
-    <!-- p4 -->
+      <!-- p4 -->
     <div>
     <h2>Hungry? Let`s find something to eat!</h2>
     <p>
@@ -69,6 +104,12 @@
     <!-- for here we can add a link on hover on the place's name -->
     </p>
     </div>
+
+    <!--   navigation-->
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    
+
+
     </main>
 <footer>
         <a href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
@@ -76,5 +117,21 @@
         <a href="https://www.visitberlin.de/de"_blank>Visit Berlin</a>
 </footer>
 
+      <script>
+        const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", () => {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav-link").forEach((link) =>
+  link.addEventListener("click", () => {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+  })
+);
+      </script>
 </body>
 </html>
