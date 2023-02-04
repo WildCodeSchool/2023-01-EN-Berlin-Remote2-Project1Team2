@@ -540,7 +540,7 @@ ul {
     margin: 0;
     padding: 0;
     }
-    
+    /* had to re-arrange the box1-box4 parts so that they could work with lazyload */
     .box1, .box2, .box3, .box4 {
         width: 50%;
         height: 300px;
@@ -557,25 +557,43 @@ ul {
         margin-bottom: 15px;
     }
     
+
+    .container4 > div{
+      display:flex;
+    }
+/* used random sizes just for testing */
+    .container4 div img{
+      width:400px;
+      height:400px;
+    }
+
+    .row{flex-direction: row;
+    }
+
+    /* used flex to arrange the boxes */
+    .row-reverse{flex-direction: row-reverse;
+    }
+    /* commented the old classes for now
+    
     .box1 {
         float: left;
-        background-image: url("https://i.pinimg.com/originals/64/3e/90/643e9063498473d68294b9dea4bf5319.jpg");
+    
     }
     
     .box2 {
         float: right;
-        background-color: burlywood;
+    
     }
     
     .box3 {
         float: left;
-        background-color: lightpink;
+    
     }
     
     .box4 {
         float: right;
-        background-color: darksalmon;
-    }
+    
+    } */
 main {
     padding: 20px;
 }
