@@ -92,6 +92,8 @@ ul {
         text-align: center;
         font-size: 20px;
         color: white;
+        
+       
     }
     #text {
         display: flex;
@@ -103,6 +105,7 @@ ul {
     .box1 {
         float: left;
         background-image: url("https://i.pinimg.com/originals/64/3e/90/643e9063498473d68294b9dea4bf5319.jpg");
+        background-size: 30vp;
     }
     
     .box2 {
