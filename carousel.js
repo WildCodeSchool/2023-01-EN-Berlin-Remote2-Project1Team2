@@ -1,3 +1,5 @@
+// js for carousel
+
 const carousel = document.querySelector(".carousel");
 const images = document.querySelectorAll(".carousel img");
 
@@ -18,3 +20,5 @@ const nextImage = () => {
 
 carousel.addEventListener("load", changeImage());
 setInterval(nextImage, 3000);
+
+  // end js for carousel

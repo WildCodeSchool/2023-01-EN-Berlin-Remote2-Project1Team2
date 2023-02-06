@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <title>Document</title>
 </head>
-<body>
-    <!-- start cont div -->
+<body onload="NextQuestion(0)">
+    <!-- start navigation div -->
     <div class="container">
-	<nav>
-        <div class="logo">Let's Explore Berlin Together!</div>
-      
-        <div class="navbar">
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">SignUp</a></li>
-          </ul>
-        </div>
-      
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-      </div> 
-<!-- end of container div -->
+      <nav>
+            <div class="logo">Let's Explore Berlin Together!</div>
+          
+            <div class="navbar">
+              <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Chart</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quiz</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">More Information</a></li>
+              </ul>
+            </div>
+          
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+<!-- end of navigation -->
     
     <!--   slider-->
 
@@ -45,20 +45,35 @@
     </figure>
     </div>
 <h1 class ="main">Welcome to Berlin: Your Guide to the City </h1>
+<!-- had to re-arrange this section to work with lazyload -->
 <div class="container4">
-    <div class="floatTop">
-        <p class="box1" id="text">This is 1</p>
-        <p class="box2" id="text">This is 2</p>
+
+    <div clas="row">
+        <p class="box1"> This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1
+        </p>
+        <img  class="lozad" data-src="https://cdn.pixabay.com/photo/2018/09/16/15/31/boy-3681679_1280.jpg">
     </div>
-    <div class="floatBottom">
-        <p class="box3" id="text">This is 3</p>
-        <p class="box4" id="text">This is 4</p>
+    <div class="row-reverse">
+        <p class="box2">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1</p>
+        <img class="lozad" data-src="https://i.pinimg.com/originals/64/3e/90/643e9063498473d68294b9dea4bf5319.jpg">
+    </div>
+    <div class="row">
+        <p class="box3">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1</p>
+        <img class="lozad" data-src="https://cdn.pixabay.com/photo/2018/09/16/15/31/boy-3681679_1280.jpg">
+    </div>
+    <div class="row-reverse">
+        <p class="box4">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1</p>
+        <img class="lozad" data-src="https://i.pinimg.com/originals/64/3e/90/643e9063498473d68294b9dea4bf5319.jpg">
+
     </div>
     </div>      
 <main> 
-
 <!-- p1 -->
-<div>
+
     <h2>Berlin: A Rich and Fascinating History</h2>
     <p> 
     Berlin is the capital of Germany with a rich 800-year history. It originally was a small settlement that grew into a prominent city in the 13th century. 
@@ -70,62 +85,158 @@
     It's a destination with a rich history, vibrant cultural scene, and something for everyone.
 </div>
 <!-- p2 -->
-    <div>
-    <h2>4 facts about Berlin:</h2>
+    <div class="p2">
+      <img src="assets/cathedral-magnet.jpg" alt="Berlin facts">
+    <h2>5 facts about Berlin:</h2>
     <p> 
 <li> Berlin is the home to over 180 museums, making it one of the most cultural cities in Europe.</li>
+<li> Berlin has a comprehensive and efficient public transport system, including buses, trains (S-Bahn and U-Bahn), trams, and ferries. Taxis and ride-sharing services such as Uber are also available in Berlin.</li>
 <li> The Berlin Zoo is one of the oldest zoos in the world, and it is home to over 1,500 species of animals, including 5 pandas.</li>
 <li> Berlin has over 2,500 bars and clubs, making it one of the most vibrant nightlife scenes in the world. </li>
 <li> Berlin was a center of the underground techno music scene in the 1980s, and is still a hub for techno music today.</li>
 </p>
     </div>
     <!-- p3 -->
-    <div>
+    <div class="p3">
+      <img src="assets/berlin-zoo.jpg" alt="What to so in Berlin">
     <h2>What you can do in Berlin?</h2> 
-    <p><span>Explore historical sites:</span> Visit landmarks such as Brandenburg Gate, Checkpoint Charlie, and the Reichstag building to learn about Berlin's past.</p>
-        <p><span>Experience nightlife:</span> Berlin is known for its vibrant nightlife, with countless bars, clubs, and music venues to choose from. </p>
-        <p><span>Shop till you drop:</span>Berlin has a variety of shopping options, from large department stores to unique boutiques.</p>
-        <p><span>Embark on a Journey Through a Parallel Cosmos:</span>Experience the Fusion of Light, Movement, and Sound in DARK MATTER.</p>
+
+    <p><span>Explore historical sites:</span> Visit landmarks such as <a href="https://en.wikipedia.org/wiki/Brandenburg_Gate">Brandenburg Gate</a>, <a href="https://www.visitberlin.de/en/checkpoint-charlie">Checkpoint Charlie</a>, and the <a href="https://www.berlin.de/sehenswuerdigkeiten/3560965-3558930-reichstag.html">Reichstag</a> building to learn about Berlin's past.</p>
+        <p><span><a href="https://www.visitberlin.de/en/drinking-nightlife">Experience nightlife</a>:</span> Berlin is known for its vibrant nightlife, with countless bars, clubs, and music venues to choose from. </p>
+        <p><span><a href="https://www.berlin.de/en/shopping/shopping-centres-department-stores/">Shop till you drop</a>: </span>Berlin has a variety of shopping options, from large department stores to unique boutiques.</p>
+        <p><span>Embark on a Journey Through a Parallel Cosmos:</span>Experience the Fusion of Light, Movement, and Sound in<a href="https://www.darkmatter.berlin/"> DARK MATTER.</a></p>
         <!-- how to make part of the text italic?  use <span></span> --> 
+
     </p>
     </div>
       <!-- p4 -->
-    <div>
+    <div class="p4">
+      <img class="img4" src="assets/pretzel.png" alt="What to eat in Berlin">
     <h2>Hungry? Let`s find something to eat!</h2>
     <p>
         <ul class="linkOnHover">
-        <li>Markthalle Neun - This historic indoor market is the perfect place to sample a variety of German and international cuisine.</li>
-        <li>Curry 36 - Known for serving the best Currywurst in town, this iconic street food spot is a must-visit for foodies.</li>
-        <li>Canal Berlin for desert - small bakery in the heart of Berlin with amazing eclairs and good coffee.</li>
+        <li><a href="https://markthalleneun.de/Markthalle">Markthalle Neun</a> - This historic indoor market is the perfect place to sample a variety of German and international cuisine.</li>
+        <li><a href="https://curry36.de/de/">Curry 36</a>  - Known for serving the best Currywurst in town, this iconic street food spot is a must-visit for foodies.</li>
+        <li><a href="https://canal.berlin/">Canal Berlin</a> for desert - small bakery in the heart of Berlin with amazing eclairs and good coffee.</li>
     </ul>
     <!-- for here we can add a link on hover on the place's name -->
     </p>
     </div>
+  </div>
+    
+    <!-- Mermaid -->
+<link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" />
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
 
-    <!--   navigation-->
+<div class="mermaid">
+  pie title Why people come to Berlin?
+      "For it's historical value" : 20
+      "Get a donner" : 25
+      "Clubbing " : 170
+      "Also clubbing but in a different color" : 145
+  </div>
+
 
     </main>
+
+      <section>
+          <!-- quiz section-->
+          <div class="modal-container" id="score-modal">
+            
+              <div class="modal-content-container">
+                
+                  <h1>Congratulations, Quiz Completed.</h1>
+                
+                  <div class="grade-details">
+                      <p>Attempts : 10</p>
+                      <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                      <p>Right Answers : <span id="right-answers"></span></p>
+                      <p>Grade : <span id="grade-percentage"></span>%</p>
+                      <p ><span id="remarks"></span></p>
+                  </div>
+                
+                  <div class="modal-button-container">
+                      <button onclick="closeScoreModal()">Continue</button>
+                  </div>
+                
+              </div>
+          </div>
+  
+          <div class="game-quiz-container">
+            
+              <div class="game-details-container">
+                  <h1>Score : <span id="player-score"></span> / 10</h1>
+                  <h1> Question : <span id="question-number"></span> / 10</h1>
+              </div>
+  
+              <div class="game-question-container">
+                  <h1 id="display-question"></h1>
+              </div>
+  
+              <div class="game-options-container">
+                
+                 <div class="modal-container" id="option-modal">
+                   
+                      <div class="modal-content-container">
+                           <h1>Please Pick An Option</h1>
+                        
+                           <div class="modal-button-container">
+                              <button onclick="closeOptionModal()">Continue</button>
+                          </div>
+                        
+                      </div>
+                   
+                 </div>
+                
+                  <span>
+                      <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                      <label for="option-one" class="option" id="option-one-label"></label>
+                  </span>
+                
+  
+                  <span>
+                      <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                      <label for="option-two" class="option" id="option-two-label"></label>
+                  </span>
+                
+  
+                  <span>
+                      <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                      <label for="option-three" class="option" id="option-three-label"></label>
+                  </span>
+                
+  
+                  <span>
+                      <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                      <label for="option-four" class="option" id="option-four-label"></label>
+                  </span>
+  
+  
+              </div>
+  
+              <div class="next-button-container">
+                  <button onclick="handleNextQuestion()">Next Question</button>
+              </div>
+  
+          </div>
+        </section>
+        <!-- end of quiz section -->
+
 <footer>
         <a href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
         <a href="https://de-de.facebook.com/Hauptstadtportal/"_blank>Facebook</a>
         <a href="https://www.visitberlin.de/de"_blank>Visit Berlin</a>
 </footer>
 
-      <script>
-        const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+<!-- script for nav animation -->
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
 
-document.querySelectorAll(".nav-link").forEach((link) =>
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
-);
-      </script>
+<!-- end of js animation -->
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="lazyload.js"></script>
+<script src="navigation.js"></script>
+<script src="carousel.js"></script>
+<script src="quiz.js"></script>
+<script src="lazyload.js"></script>
 </body>
 </html>
