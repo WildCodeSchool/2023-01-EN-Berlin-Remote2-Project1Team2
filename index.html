@@ -5,32 +5,32 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <title>Document</title>
 </head>
-<body>
-    <!-- start cont div -->
+<body onload="NextQuestion(0)">
+    <!-- start navigation div -->
     <div class="container">
-	<nav>
-        <div class="logo">Let's Explore Berlin Together!</div>
-      
-        <div class="navbar">
-          <ul class="nav-menu">
-            <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">SignUp</a></li>
-          </ul>
-        </div>
-      
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
-      </nav>
-      </div> 
-<!-- end of container div -->
+      <nav>
+            <div class="logo">Let's Explore Berlin Together!</div>
+          
+            <div class="navbar">
+              <ul class="nav-menu">
+                <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Chart</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Quiz</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">More Information</a></li>
+              </ul>
+            </div>
+          
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
+          </nav>
+<!-- end of navigation -->
     
     <!--   slider-->
 
@@ -45,22 +45,35 @@
     </figure>
     </div>
 <h1 class ="main">Welcome to Berlin: Your Guide to the City </h1>
+<!-- had to re-arrange this section to work with lazyload -->
 <div class="container4">
-    <div class="floatTop">
-        <p class="box1" id="text">Dive into history</p>
-        <p class="box2" id="text">Good to know</p>
+
+    <div clas="row">
+        <p class="box1"> This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1
+        </p>
+        <img  class="lozad" data-src="https://cdn.pixabay.com/photo/2018/09/16/15/31/boy-3681679_1280.jpg">
     </div>
-    <div class="floatBottom">
-        <p class="box3" id="text">Let`s plan your trip</p>
-        <p class="box4" id="text">For food lovers</p>
+    <div class="row-reverse">
+        <p class="box2">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1</p>
+        <img class="lozad" data-src="https://i.pinimg.com/originals/64/3e/90/643e9063498473d68294b9dea4bf5319.jpg">
+    </div>
+    <div class="row">
+        <p class="box3">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1</p>
+        <img class="lozad" data-src="https://cdn.pixabay.com/photo/2018/09/16/15/31/boy-3681679_1280.jpg">
+    </div>
+    <div class="row-reverse">
+        <p class="box4">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
+            This is 1This is 1 This is 1 This is 1 This is 1</p>
+        <img class="lozad" data-src="https://i.pinimg.com/originals/64/3e/90/643e9063498473d68294b9dea4bf5319.jpg">
+
     </div>
     </div>      
 <main> 
-
 <!-- p1 -->
-<div class="chess">
-<div class="p1">
-  <img src="assets/history-berlin.jpg" alt="Berlin history">
+
     <h2>Berlin: A Rich and Fascinating History</h2>
     <p> 
     Berlin is the capital of Germany with a rich 800-year history. It originally was a small settlement that grew into a prominent city in the 13th century. 
@@ -87,11 +100,13 @@
     <div class="p3">
       <img src="assets/berlin-zoo.jpg" alt="What to so in Berlin">
     <h2>What you can do in Berlin?</h2> 
+
     <p><span>Explore historical sites:</span> Visit landmarks such as <a href="https://en.wikipedia.org/wiki/Brandenburg_Gate">Brandenburg Gate</a>, <a href="https://www.visitberlin.de/en/checkpoint-charlie">Checkpoint Charlie</a>, and the <a href="https://www.berlin.de/sehenswuerdigkeiten/3560965-3558930-reichstag.html">Reichstag</a> building to learn about Berlin's past.</p>
         <p><span><a href="https://www.visitberlin.de/en/drinking-nightlife">Experience nightlife</a>:</span> Berlin is known for its vibrant nightlife, with countless bars, clubs, and music venues to choose from. </p>
         <p><span><a href="https://www.berlin.de/en/shopping/shopping-centres-department-stores/">Shop till you drop</a>: </span>Berlin has a variety of shopping options, from large department stores to unique boutiques.</p>
         <p><span>Embark on a Journey Through a Parallel Cosmos:</span>Experience the Fusion of Light, Movement, and Sound in<a href="https://www.darkmatter.berlin/"> DARK MATTER.</a></p>
         <!-- how to make part of the text italic?  use <span></span> --> 
+
     </p>
     </div>
       <!-- p4 -->
@@ -121,30 +136,107 @@
       "Also clubbing but in a different color" : 145
   </div>
 
-    <!--   navigation-->
 
     </main>
+
+      <section>
+          <!-- quiz section-->
+          <div class="modal-container" id="score-modal">
+            
+              <div class="modal-content-container">
+                
+                  <h1>Congratulations, Quiz Completed.</h1>
+                
+                  <div class="grade-details">
+                      <p>Attempts : 10</p>
+                      <p>Wrong Answers : <span id="wrong-answers"></span></p>
+                      <p>Right Answers : <span id="right-answers"></span></p>
+                      <p>Grade : <span id="grade-percentage"></span>%</p>
+                      <p ><span id="remarks"></span></p>
+                  </div>
+                
+                  <div class="modal-button-container">
+                      <button onclick="closeScoreModal()">Continue</button>
+                  </div>
+                
+              </div>
+          </div>
+  
+          <div class="game-quiz-container">
+            
+              <div class="game-details-container">
+                  <h1>Score : <span id="player-score"></span> / 10</h1>
+                  <h1> Question : <span id="question-number"></span> / 10</h1>
+              </div>
+  
+              <div class="game-question-container">
+                  <h1 id="display-question"></h1>
+              </div>
+  
+              <div class="game-options-container">
+                
+                 <div class="modal-container" id="option-modal">
+                   
+                      <div class="modal-content-container">
+                           <h1>Please Pick An Option</h1>
+                        
+                           <div class="modal-button-container">
+                              <button onclick="closeOptionModal()">Continue</button>
+                          </div>
+                        
+                      </div>
+                   
+                 </div>
+                
+                  <span>
+                      <input type="radio" id="option-one" name="option" class="radio" value="optionA" />
+                      <label for="option-one" class="option" id="option-one-label"></label>
+                  </span>
+                
+  
+                  <span>
+                      <input type="radio" id="option-two" name="option" class="radio" value="optionB" />
+                      <label for="option-two" class="option" id="option-two-label"></label>
+                  </span>
+                
+  
+                  <span>
+                      <input type="radio" id="option-three" name="option" class="radio" value="optionC" />
+                      <label for="option-three" class="option" id="option-three-label"></label>
+                  </span>
+                
+  
+                  <span>
+                      <input type="radio" id="option-four" name="option" class="radio" value="optionD" />
+                      <label for="option-four" class="option" id="option-four-label"></label>
+                  </span>
+  
+  
+              </div>
+  
+              <div class="next-button-container">
+                  <button onclick="handleNextQuestion()">Next Question</button>
+              </div>
+  
+          </div>
+        </section>
+        <!-- end of quiz section -->
+
 <footer>
         <a href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
         <a href="https://de-de.facebook.com/Hauptstadtportal/"_blank>Facebook</a>
         <a href="https://www.visitberlin.de/de"_blank>Visit Berlin</a>
 </footer>
 
-      <script>
-        const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+<!-- script for nav animation -->
 
-hamburger.addEventListener("click", () => {
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
-});
 
-document.querySelectorAll(".nav-link").forEach((link) =>
-  link.addEventListener("click", () => {
-    hamburger.classList.remove("active");
-    navMenu.classList.remove("active");
-  })
-);
-      </script>
+<!-- end of js animation -->
+<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
+<script src="lazyload.js"></script>
+<script src="navigation.js"></script>
+<script src="carousel.js"></script>
+<script src="quiz.js"></script>
+<script src="lazyload.js"></script>
 </body>
 </html>
