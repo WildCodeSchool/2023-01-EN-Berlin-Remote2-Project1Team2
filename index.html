@@ -12,7 +12,7 @@
     <!-- start navigation div -->
     <div class="container">
       <nav>
-            <div class="logo">Let's Explore Berlin Together!</div>
+            <div class="logo fade">Let's Explore Berlin Together!</div>
           
             <div class="navbar">
               <ul class="nav-menu">
@@ -47,35 +47,37 @@
 <h1 class ="main">Welcome to Berlin: Your Guide to the City </h1>
 <!-- had to re-arrange this section to work with lazyload -->
 <div class="container4">
-
+<!-- flexbox is used here, flex-start and flex-end respectively -->
     <div clas="row">
         <p class=""> This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
             This is 1This is 1 This is 1 This is 1 This is 1
         </p>
-        <img  class="lozad" data-src="assets/red-light.jpg">
+        <img  class="lozad fade" data-src="assets/red-light.jpg">
+        <!-- each img has a data-src to load it lazily. it's almost the same property as src but 
+        used for the script to work -->
     </div>
     <div class="row-reverse">
         <p class="">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
             This is 1This is 1 This is 1 This is 1 This is 1</p>
-        <img class="lozad" data-src="assets/berlin.jpg">
+        <img class="lozad fade" data-src="assets/berlin.jpg">
     </div>
     <div class="row">
         <p class="">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
             This is 1This is 1 This is 1 This is 1 This is 1</p>
-        <img class="lozad" data-src="assets/tv-tower.jpg">
+        <img class="lozad fade" data-src="assets/tv-tower.jpg">
     </div>
     <div class="row-reverse">
         <p class="">This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1 This is 1
             This is 1This is 1 This is 1 This is 1 This is 1</p>
-        <img class="lozad" data-src="assets/market-halle.jpg">
+        <img class="lozad fade" data-src="assets/market-halle.jpg">
 
     </div>
     </div>      
 <main> 
 <!-- p1 -->
 
-    <h2>Berlin: A Rich and Fascinating History</h2>
-    <p> 
+    <h2 class="lozad fade">Berlin: A Rich and Fascinating History</h2>
+    <p class=" lozad fade"> 
     Berlin is the capital of Germany with a rich 800-year history. It originally was a small settlement that grew into a prominent city in the 13th century. 
     During WWII, the city was bombed and divided into four occupied zones by the Allies. 
     In 1961, the Berlin Wall was erected separating East and West. 
@@ -87,7 +89,7 @@
 <!-- p2 -->
     <div class="p2">
       <img class="lozad" data-src="assets/cathedral-magnet.jpg" alt="Berlin facts">
-    <h2>5 facts about Berlin:</h2>
+    <h2 class="lozad">5 facts about Berlin:</h2>
     <p> 
 <li> Berlin is the home to over 180 museums, making it one of the most cultural cities in Europe.</li>
 <li> Berlin has a comprehensive and efficient public transport system, including buses, trains (S-Bahn and U-Bahn), trams, and ferries. Taxis and ride-sharing services such as Uber are also available in Berlin.</li>
@@ -128,7 +130,7 @@
 <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" />
 <script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
 
-<div class="mermaid">
+<div class="mermaid fade lozad">
   pie title Why people come to Berlin?
       "For it's historical value" : 20
       "Get a donner" : 25
@@ -139,7 +141,7 @@
 
     </main>
 
-      <section>
+      <section class="fade lozad">
           <!-- quiz section-->
           <div class="modal-container" id="score-modal">
             
@@ -222,7 +224,7 @@
         </section>
         <!-- end of quiz section -->
 
-<footer data-loader="showDiv">
+<footer class="fade lozad" data-loader="showDiv">
         <a href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
         <a href="https://de-de.facebook.com/Hauptstadtportal/"_blank>Facebook</a>
         <a href="https://www.visitberlin.de/de"_blank>Visit Berlin</a>
@@ -232,6 +234,7 @@
 
 
 <!-- end of js animation -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
 <script src="lazyload.js"></script>
 <script src="navigation.js"></script>
