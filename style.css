@@ -6,6 +6,7 @@
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: "Yuji Boku", serif;
+  background-color: darkslategray;
 }
 
 .container{
@@ -563,7 +564,7 @@ ul {
       display:flex;
     }
 /* used random sizes just for testing */
-    .container4 div img{
+    .chesse div img{
       width:400px;
       height:400px;
     }
@@ -778,29 +779,29 @@ ul {
         margin-bottom: 15px;
     }
     
+     
     .box1 {
-        float: left;
-        background-image: url("assets/red-light.jpg");
-        background-size: 30vp;
-    }
-    
-    .box2 {
-      background-image: url("assets/berlin.jpg");
-        float: right;
-        background-color: burlywood;
-    }
-    
-    .box3 {
-      background-image: url("assets/tv-tower.jpg");
-        float: left;
-        background-color: lightpink;
-    }
-    
-    .box4 {
-      background-image: url("assets/market-halle.jpg");
-        float: right;
-        background-color: darksalmon;
-    }
+      float: left;
+      background-image: url("assets/red-light.jpg");
+      background-size: 30vp;
+  }
+  
+  .box2 {
+    background-image: url("assets/berlin.jpg");
+      float: right;
+      background-color: burlywood;
+  }
+  
+  .box3 {
+    background-image: url("assets/tv-tower.jpg");
+      float: left;
+      background-color: lightpink;
+  }
+  
+  .box4 {
+    background-image: url("assets/market-halle.jpg");
+      float: right;
+      background-color: darksalmon;
 main {
     padding: 20px;
 }
