@@ -5,6 +5,8 @@
 * {
   margin: 0;
   padding: 0;
+  margin-left: 20%;
+  margin-right: 20%;
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -16,6 +18,7 @@
 
 }
  
+
 .chess-row-1 {
   display:flex;
   flex-direction: row;
@@ -261,7 +264,7 @@ a.nav-link:hover {
     justify-content: center;
     align-items: center;
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,126,1) 50%, rgba(0,212,255,1) 100%);
+background-color: var(--primary-color);
     }
 
     .game-quiz-container{
@@ -367,7 +370,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,126,1) 50%, rgb
       outline: none;
   }
   .next-button-container button:hover{
-      background-color: rgb(143, 93, 93);
+      background-color: rgb(138, 124, 124);
   }
   
   .modal-container{
@@ -546,6 +549,13 @@ ul {
 
 }
 
+#img_chess {
+  max-width: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+}
+
 
 .floatTop, .floatBottom {
     display: flex;
@@ -563,21 +573,39 @@ ul {
         text-align: center;
         font-size: 20px;
         color: white;
+        background-color: var(--primary-color);
     }
     #text {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         margin-bottom: 15px;
-    }
+          font-size: medium;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          margin-bottom: 15px;
+      }
+      
+      @media (max-width: 576px) {
+        .box1, .box2, .box3, .box4 {
+          width: 100%;
+        }
+      }
+      .box1:hover, .box2:hover, .box3:hover, .box4:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
     
 
     .container4 > div{
       display:flex;
+      margin: 20px;
     }
 /* used random sizes just for testing */
     
-    .chesse div img{
+    .chess div img{
       width:400px;
       height:400px;
     }
@@ -637,40 +665,6 @@ footer a:hover {
 
 /* end of your styles add comments */
 
-
-/* slider styles */
-
-/* styles for slides */
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-    
-    body { margin: 0; } 
-    div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 30s slidy infinite; 
-    }
-    
-
-/* styles for slides */
-
-
 /* navigation styles big screen*/
 
 * {
@@ -725,6 +719,7 @@ h3 {
 }
 p {
     text-indent: 25px;
+   
     
 }
 
@@ -752,7 +747,7 @@ ul {
     align-items: center;
     margin:0;
     padding: 0;
-    gap: 20px;
+    gap: 30px;
     }
     
     .box1, .box2, .box3, .box4 {
@@ -763,32 +758,25 @@ ul {
         text-align: center;
         font-size: 20px;
         color: white;
-        gap: 20px;
-        
+        gap: 30px;
+        border-radius: 15px;
        
-    }
-    #text {
-        font-size: medium;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-bottom: 15px;
     }
     
      
     .box1 {
-      background-image: url("assets/red-light.jpg");
+      background-image: url("assets/ch-b-berlin.jpg");
       background-size: 30vp;
   }
   
   .box2 {
-    background-image: url("assets/berlin.jpg");
+    background-image: url("assets/ch-b-siluet.jpg");
       float: right;
       background-color: burlywood;
   }
   
   .box3 {
-    background-image: url("assets/tv-tower.jpg");
+    background-image: url("assets/ch-b-vorota.jpg");
       float: left;
       background-color: lightpink;
   }
@@ -972,32 +960,3 @@ a.nav-link:hover {
   }
 
 }
-
-
-/* slider styles */
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-    
-    body { margin: 0; } 
-    div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 30s slidy infinite; 
-    }
-
