@@ -14,6 +14,19 @@
 
 }
 
+.chess {
+  display:flex;
+  flex-wrap:wrap;
+}
+
+.chess > .chess-row{
+  flex-direction:row;
+}
+
+.chess > .chess-row-reverse{
+  flex-direction: row-reverse;
+}
+
 html{
   height:100%;
 }
@@ -562,6 +575,7 @@ ul {
       display:flex;
     }
 /* used random sizes just for testing */
+    
     .chesse div img{
       width:400px;
       height:400px;
@@ -654,7 +668,7 @@ footer a:hover {
     
 
 /* styles for slides */
-=======
+
 
 /* navigation styles big screen*/
 
@@ -762,7 +776,6 @@ ul {
     
      
     .box1 {
-      float: left;
       background-image: url("assets/red-light.jpg");
       background-size: 30vp;
   }
@@ -782,16 +795,13 @@ ul {
   .box4 {
     background-image: url("assets/market-halle.jpg");
       float: right;
-      background-color: darksalmon;
+      background-color: darksalmon;}
 main {
     padding: 20px;
 }
 /* p1 p2 p3 p4*/
-.chess {
-  display:flex;
-  flex-wrap:wrap;
-  flex-direction: column;
-}
+
+
 .p1, .p3 {
   width:50%;
   text-align: center;
