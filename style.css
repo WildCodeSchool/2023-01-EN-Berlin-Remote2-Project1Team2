@@ -248,7 +248,6 @@ a.nav-link:hover {
     justify-content: center;
     align-items: center;
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,126,1) 50%, rgba(0,212,255,1) 100%);
     }
 
     .game-quiz-container{
@@ -519,6 +518,7 @@ span {
 
 p {
     text-indent: 25px;
+  font-size: 16px;
 }
 
 
@@ -601,7 +601,7 @@ main {
 
 footer{
   padding:40px 25px;
-  background-color: lightslategrey;
+  background-color:#E9E9E9;;
 }
 footer a {
   text-decoration:none;
@@ -696,23 +696,20 @@ a :hover{
 }
   
 .mermaid {
-  background-color: lightgray;
-  margin:auto;
+
 }
+
 h1, h2{
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
 h3 {
     font-style: italic;
-    font-weight: lighter ;
+    font-weight: lighter;
+    font-size: medium;
+  
     font-family: 'Open Sans', sans-serif;
 }
-p {
-    text-indent: 25px;
-    
-}
-
 
 ul {
   margin-bottom: 0;
