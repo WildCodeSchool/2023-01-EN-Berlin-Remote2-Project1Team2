@@ -1,5 +1,7 @@
 
-
+p{
+  display:inherit;
+}
 * {
   margin: 0;
   padding: 0;
@@ -13,19 +15,17 @@
     margin: 0 auto;
 
 }
-
-.chess {
+ 
+.chess-row-1 {
   display:flex;
-  flex-wrap:wrap;
+  flex-direction: row;
 }
+.chess-row-2{
+  flex-direction:row-reverse;
+  display:flex;
+}
+ 
 
-.chess > .chess-row{
-  flex-direction:row;
-}
-
-.chess > .chess-row-reverse{
-  flex-direction: row-reverse;
-}
 
 html{
   height:100%;
@@ -530,8 +530,9 @@ span {
 }
 
 
-p {
+.chess-row col.p {
     text-indent: 25px;
+    display:flex;
 }
 
 
