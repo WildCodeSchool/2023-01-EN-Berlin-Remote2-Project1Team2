@@ -5,8 +5,7 @@
   padding: 0;
   scroll-behavior: smooth;
   box-sizing: border-box;
-  font-family: "Yuji Boku", serif;
-  background-color: darkslategray;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -21,7 +20,7 @@ html{
 
 body {
   background-color: #E9E9E9;
-  font-family: Arial, sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #333;
   height: 100%;
@@ -53,8 +52,6 @@ nav {
   -ms-flex-align: center;
   align-items: center;
   background: #360033;
-  background: -webkit-linear-gradient(-8deg, #0b8793, #360033);
-  background: linear-gradient(-8deg, #0b8793, #360033);
 }
 
 ul {
@@ -242,7 +239,7 @@ a.nav-link:hover {
     /* end slider styles */
 /* start section styles for quiz */
     section{
-      font-family: Arial, sans-serif;
+      font-family: 'Open Sans', sans-serif;
       font-size: 20px;
       width: 100%;
     min-height: 100vh;
@@ -287,7 +284,8 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,126,1) 50%, rgb
       border-radius: 25px;
   }
   
-  .game-question-container h1{
+  .game-question-container *
+  {
       font-size: 1.1rem;
       text-align: center;
       padding: 3px;
@@ -664,7 +662,7 @@ footer a:hover {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
-  font-family: "Yuji Boku", serif;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .container{
@@ -679,7 +677,7 @@ body {
 }
 
 span {
-  font-style: italic;
+  font-style: normal;
 }
 
 .logo {
@@ -688,26 +686,7 @@ span {
   font-weight: bold;
 }
 
-nav {
-  height: 75px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-around;
-  margin: 0;
-  padding: 0 1rem;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background: #360033;
-  background: -webkit-linear-gradient(-8deg, #0b8793, #360033);
-  background: linear-gradient(-8deg, #0b8793, #360033);
-}
+
 .linkOnHover, a {
   color: #333;
 }
@@ -722,14 +701,16 @@ a :hover{
 }
 h1, h2{
   text-align: center;
+  font-family: 'Open Sans', sans-serif;
 }
 h3 {
     font-style: italic;
     font-weight: lighter ;
-  
+    font-family: 'Open Sans', sans-serif;
 }
 p {
     text-indent: 25px;
+    
 }
 
 
