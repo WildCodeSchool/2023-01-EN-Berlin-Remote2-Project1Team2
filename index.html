@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
     <title>Document</title>
 </head>
@@ -54,36 +55,53 @@
             <p class="box3" id="text">Let`s plan your trip</p>
             <p class="box4" id="text">For food lovers</p>
         </div>
-        </div>   
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    </div>   
          <!--   chesse -->
-<div class="chesse">
-    <div clas="row">
+<div class="">
+    <div class="">
+        <!-- display flex for chess-row-1 and direction row -->
+    <div class="chess-row-1">
         <!--   class="box1" -->
-        <p class="chesse1"><h2>Berlin: A Rich and Fascinating History</h2>
+        <div class="">
+            <h2 class="">Berlin: A Rich and Fascinating History</h2>
+            <p class="">
             Berlin is the capital of Germany with a rich 800-year history. It originally was a small settlement that grew into a prominent city in the 13th century. 
             During WWII, the city was bombed and divided into four occupied zones by the Allies. 
             In 1961, the Berlin Wall was erected separating East and West. 
-            The fall of the Berlin Wall in 1989 marked the end of the Cold War and reunited the city. </p>
-            <p>Today, Berlin is a hub of culture, politics, and commerce known for its history, arts and culture, and nightlife. 
+            The fall of the Berlin Wall in 1989 marked the end of the Cold War and reunited the city. <br><br>
+            Today, Berlin is a hub of culture, politics, and commerce known for its history, arts and culture, and nightlife. 
             It is home to landmarks like Brandenburg Gate and cultural sites like Museum Island. 
             It's a destination with a rich history, vibrant cultural scene, and something for everyone.
-        </p>
-        <img  class="lozad" data-src="assets/cathedral-magnet.jpg" alt="Berlin facts">>
+            </p>
+        </div>
+            <img  class="lozad img.lazy" data-src="assets/cathedral-magnet.jpg" alt="Berlin facts">>
     </div>
-    <div class="row-reverse">
-        <p class="chesse2">
-            <h2>5 facts about Berlin:</h2>
+    </div>
+
+    <div class="">
+        <!-- display flex for chess-row-2 and direction row-reverse -->
+        <div class="chess-row-2">
+        <div>
+        <h2>5 facts about Berlin:</h2>
+        <p class="">
+            
         <li> Berlin is the home to over 180 museums, making it one of the most cultural cities in Europe.</li>
         <li> Berlin has a comprehensive and efficient public transport system, including buses, trains (S-Bahn and U-Bahn), trams, and ferries. Taxis and ride-sharing services such as Uber are also available in Berlin.</li>
         <li> The Berlin Zoo is one of the oldest zoos in the world, and it is home to over 1,500 species of animals, including 5 pandas.</li>
         <li> Berlin has over 2,500 bars and clubs, making it one of the most vibrant nightlife scenes in the world. </li>
         <li> Berlin was a center of the underground techno music scene in the 1980s, and is still a hub for techno music today.</li>
         </p>
-        <img class="lozad" data-src="assets/history-berlin.jpg">
     </div>
-    <div class="row">
-        <p class="chesse3"> <h2>What you can do in Berlin?</h2> 
+    <img class="lozad img.lazy" data-src="assets/history-berlin.jpg">
+    </div>
+        
+    </div>
+    <div class="">
+        <!-- display flex for chess-row-1 and direction row -->
+        <div class="chess-row-1">
+            <div>
+        <h2>What you can do in Berlin?</h2>
+        <p class="">  
 
             <p><span>Explore historical sites:</span> Visit landmarks such as <a href="https://en.wikipedia.org/wiki/Brandenburg_Gate">Brandenburg Gate</a>, <a href="https://www.visitberlin.de/en/checkpoint-charlie">Checkpoint Charlie</a>, and the <a href="https://www.berlin.de/sehenswuerdigkeiten/3560965-3558930-reichstag.html">Reichstag</a> building to learn about Berlin's past.</p>
                 <p><span><a href="https://www.visitberlin.de/en/drinking-nightlife">Experience nightlife</a>:</span> Berlin is known for its vibrant nightlife, with countless bars, clubs, and music venues to choose from. </p>
@@ -92,10 +110,16 @@
                 <!-- how to make part of the text italic?  use <span></span> --> 
         
             </p>
-        <img class="lozad" data-src="assets/berlin-zoo.jpg">
+        </div>
+        <img class="lozad fade img.lazy" data-src="assets/berlin-zoo.jpg">
     </div>
-    <div class="row-reverse">
-        <p class="chesse4"><h2>Hungry? Let`s find something to eat!</h2>
+    </div>
+    <div class="">
+        <!-- display flex for chess-row-2 and direction row-reverse -->
+        <div class="chess-row-2">
+        <div class="">
+        <h2>Hungry? Let`s find something to eat!</h2>
+        <p class="">
                 <ul class="linkOnHover">
                 <li><a href="https://markthalleneun.de/Markthalle">Markthalle Neun</a> - This historic indoor market is the perfect place to sample a variety of German and international cuisine.</li>
                 <li><a href="https://curry36.de/de/">Curry 36</a>  - Known for serving the best Currywurst in town, this iconic street food spot is a must-visit for foodies.</li>
@@ -103,11 +127,15 @@
             </ul>
             <!-- for here we can add a link on hover on the place's name -->
             </p>
-        <img class="lozad" data-src="assets/pretzel.png">
+        </div>
+        <img class="lozad img.lazy" data-src="assets/pretzel.png">
+        </div>
+        </div>
+        
 
     </div>
-    </div> 
-</div>     
+</div>    
+ </div>
 <main> 
 <!-- p1 -->
 <!-- p2 -->
@@ -227,6 +255,7 @@
 <script src="navigation.js"></script>
 <script src="carousel.js"></script>
 <script src="quiz.js"></script>
-<script src="lazyload.js"></script>
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 </body>
 </html>
