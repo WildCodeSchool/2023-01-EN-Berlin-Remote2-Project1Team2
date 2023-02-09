@@ -1031,6 +1031,8 @@ a.nav-link:hover {
       animation: 30s slidy infinite; 
     }
 
+/* fadein styles applied to the elements in html to create a fadein eefect */
+
 .fade-in {
   opacity: 0;
   transform: translateY(20vh);
@@ -1058,6 +1060,34 @@ a.nav-link:hover {
   visibility: visible;
 }
 
+/* specific fadein effect applied to the menu toggled by the js function in the index.js file */
+
 .toshow{
   display:none;
 }
+
+/* end of the menu fadein styles  */
+
+/* end of all fadein styles */
+
+/* custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 22px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #1c1a1a;
+  border-radius: 20px;
+  border: 6px solid transparent;
+  background-clip: content-box;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #5f6364;
+}
+
+/* end of scrollbar styles */
