@@ -6,7 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,800' rel='stylesheet' type='text/css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+    <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" />
     <title>Document</title>
 </head>
 <body onload="NextQuestion(0)">
@@ -15,7 +17,7 @@
       <nav>
             <div class="logo">Let's Explore Berlin Together!</div>
           
-            <div class="navbar">
+            <div class="navbar toshow">
               <ul class="nav-menu">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
                 <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
@@ -45,8 +47,8 @@
     <img src="assets/555.jpg" alt>
     </figure>
     </div>
-    <h1 class ="main">Welcome to Berlin: Your Guide to the City </h1>
-    <div class="container4">
+    <h1 class ="main fade-in">Welcome to Berlin: Your Guide to the City </h1>
+    <div class="container4 fade-in">
         <div class="floatTop">
             <p class="box1" id="text">Dive into history</p>
             <p class="box2" id="text">Good to know</p>
@@ -60,7 +62,7 @@
 <div class="">
     <div class="">
         <!-- display flex for chess-row-1 and direction row -->
-    <div class="chess-row-1">
+    <div class="chess-row-1 fade-in">
         <!--   class="box1" -->
         <div class="">
             <h2 class="">Berlin: A Rich and Fascinating History</h2>
@@ -74,13 +76,13 @@
             It's a destination with a rich history, vibrant cultural scene, and something for everyone.
             </p>
         </div>
-            <img  class="lozad img.lazy" data-src="assets/cathedral-magnet.jpg" alt="Berlin facts">>
+            <img  class="img.lazy lozad" src="assets/cathedral-magnet.jpg" alt="Berlin facts">>
     </div>
     </div>
 
     <div class="">
         <!-- display flex for chess-row-2 and direction row-reverse -->
-        <div class="chess-row-2">
+        <div class="chess-row-2 fade-in">
         <div>
         <h2>5 facts about Berlin:</h2>
         <p class="">
@@ -92,13 +94,13 @@
         <li> Berlin was a center of the underground techno music scene in the 1980s, and is still a hub for techno music today.</li>
         </p>
     </div>
-    <img class="lozad img.lazy" data-src="assets/history-berlin.jpg">
+    <img class="img.lazy lozad" src="assets/history-berlin.jpg">
     </div>
         
     </div>
     <div class="">
         <!-- display flex for chess-row-1 and direction row -->
-        <div class="chess-row-1">
+        <div class="chess-row-1 fade-in">
             <div>
         <h2>What you can do in Berlin?</h2>
         <p class="">  
@@ -111,12 +113,12 @@
         
             </p>
         </div>
-        <img class="lozad fade img.lazy" data-src="assets/berlin-zoo.jpg">
+        <img class="lozad img.lazy" src="assets/berlin-zoo.jpg">
     </div>
     </div>
     <div class="">
         <!-- display flex for chess-row-2 and direction row-reverse -->
-        <div class="chess-row-2">
+        <div class="chess-row-2 fade-in">
         <div class="">
         <h2>Hungry? Let`s find something to eat!</h2>
         <p class="">
@@ -128,7 +130,7 @@
             <!-- for here we can add a link on hover on the place's name -->
             </p>
         </div>
-        <img class="lozad img.lazy" data-src="assets/pretzel.png">
+        <img class="lozad img.lazy" src="assets/pretzel.png">
         </div>
         </div>
         
@@ -143,10 +145,10 @@
       <!-- p4 -->
     
     <!-- Mermaid -->
-<link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" />
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
 
-<div class="mermaid">
+
+
+<div class="mermaid fade-in">
   pie title Why people come to Berlin?
       "For it's historical value" : 20
       "Get a donner" : 25
@@ -157,7 +159,7 @@
 
     </main>
 
-      <section>
+      <section class="fade-in">
           <!-- quiz section-->
           <div class="modal-container" id="score-modal">
             
@@ -240,22 +242,26 @@
         </section>
         <!-- end of quiz section -->
 
-<footer>
-        <a href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
-        <a href="https://de-de.facebook.com/Hauptstadtportal/"_blank>Facebook</a>
-        <a href="https://www.visitberlin.de/de"_blank>Visit Berlin</a>
+<footer class="fade-in">
+        <p>Let's Explore Berlin Together!</p>
+        <div>
+            <i class="fi fi-brands-instagram"></i><a class="animated" href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
+            <i class="fi fi-brands-facebook"></i><a class="animated" href="https://de-de.facebook.com/Hauptstadtportal/"_blank>Facebook</a>
+            <i class="fi fi-ss-globe-alt"></i><a class="animated" href="https://www.visitberlin.de/de"_blank>Visit Berlin</a><br>
+            <i class="globe">☏</i><span>030 25002333</span>
+        </div>
+        <p>© 2023 Wild Code School Remote Team 2</p>
 </footer>
 
 <!-- script for nav animation -->
-
-
 <!-- end of js animation -->
-<script src="https://cdn.jsdelivr.net/npm/lozad/dist/lozad.min.js"></script>
-<script src="lazyload.js"></script>
 <script src="navigation.js"></script>
 <script src="carousel.js"></script>
 <script src="quiz.js"></script>
-<script src="script.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+<script src="script.js"></script>
+<script src="script2.js"></script>
+<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
+
 </body>
 </html>
