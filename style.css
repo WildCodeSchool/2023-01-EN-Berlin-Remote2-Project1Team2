@@ -3,7 +3,36 @@
   --background-color:#1C1A1A;
   --chess1:#F7F7F7 ;
   --chess2: #E6F1F6;
+  
 }
+
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #333;
+    --text-color: #fff;
+    --chese1: #ddd;
+  }
+}
+
+@media screen and (prefers-color-scheme: light) {
+  :root {
+    --background-color: #fff;
+    --text-color: #333;
+    --chese1: #000;
+  }
+}
+
+.text-with-background {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--chese1);
+}
+
 
 * {
   margin: 0;
@@ -14,6 +43,8 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+
+
 
 .container{
     width: 100%;
@@ -43,9 +74,7 @@
   font-size: large;
 }
 
-#id  {
-  
-}
+
 html{
   height:100%;
 }
