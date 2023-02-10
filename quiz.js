@@ -4,7 +4,15 @@
   // js for questions (needs work on it)
 const questions = [
     {
-        question: "He was a good tennis player. He won two Wimbledon titles? ?",
+        question: "Which statement about Berlin is wrong ?",
+        optionA: "It is the capital of the Federal Republic of Germany",
+        optionB: "It is one of Germany's 16 federal states",
+        optionC: "East Berlin used to be the capital of the GDR",
+        optionD: "There is no 'Currywurst' in the city",
+        correctOption: "optionD"
+    },
+    {
+        question: "He was a good tennis player. He won two Wimbledon titles ?",
         optionA: "Roger Federer",
         optionB: "Bojn Berg",
         optionC: "Boris Becker",
