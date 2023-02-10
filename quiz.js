@@ -3,6 +3,46 @@
 
   // js for questions (needs work on it)
 const questions = [
+    {
+        question: "He was a good tennis player. He won two Wimbledon titles? ?",
+        optionA: "Roger Federer",
+        optionB: "Bojn Berg",
+        optionC: "Boris Becker",
+        optionD: "Rafael Nadal",
+        correctOption: "optionC"
+    },
+    {
+        question: "What was the wall called that separated the country ?",
+        optionA: "The Munich Wall",
+        optionB: "The Bonn Wall",
+        optionC: "The Bremen Wall",
+        optionD: "The Berlin Wall",
+        correctOption: "optionD"
+    },
+    {
+        question: "What was West Germany's capital ?",
+        optionA: "Munich",
+        optionB: "Bonn",
+        optionC: "Bremen",
+        optionD: "Hamburg",
+        correctOption: "optionB"
+    },
+    {
+        question: "What was East Germany's capital ?",
+        optionA: "Berlin",
+        optionB: "Wuppertal",
+        optionC: "Hamburg",
+        optionD: "POtsdam",
+        correctOption: "optionA"
+    },
+    {
+        question: "How tall is the Berliner Fernsehturm (TV-tower) ?",
+        optionA: "298 meters",
+        optionB: "368 meters",
+        optionC: "423 meters",
+        optionD: "365 meters",
+        correctOption: "optionB"
+    },
   {
       question: "When did Berlin originally become a prominent city ?",
       optionA: "In the 13th century",
