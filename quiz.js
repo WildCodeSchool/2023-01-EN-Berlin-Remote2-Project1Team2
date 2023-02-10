@@ -4,6 +4,14 @@
   // js for questions (needs work on it)
 const questions = [
     {
+        question: "The oldest town in Germany, founded 16 BC ?",
+        optionA: "Speyer",
+        optionB: "Berlin",
+        optionC: "Trier",
+        optionD: "Cologne",
+        correctOption: "optionC"
+    },
+    {
         question: "Which statement about Berlin is wrong ?",
         optionA: "It is the capital of the Federal Republic of Germany",
         optionB: "It is one of Germany's 16 federal states",
