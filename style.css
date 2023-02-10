@@ -1129,7 +1129,7 @@ a.nav-link:hover {
   margin:0 auto;
 }
 h1{
-  width:90%;
+  width:100%;
 }
 
 .container4 > div{
@@ -1139,4 +1139,8 @@ h1{
 
 .container4{
 margin:0 auto;
+}
+
+#information{
+  padding:20px 0 30px 0;
 }
