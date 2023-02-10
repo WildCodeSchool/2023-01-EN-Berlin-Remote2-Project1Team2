@@ -13,9 +13,9 @@ const questions = [
     },
     {
         question: "Which statement about Berlin is wrong ?",
-        optionA: "It is the capital of the Federal Republic of Germany",
-        optionB: "It is one of Germany's 16 federal states",
-        optionC: "East Berlin used to be the capital of the GDR",
+        optionA: "Capital of the Federal Republic of Germany",
+        optionB: "One of Germany's 16 federal states",
+        optionC: "East Berlin was the capital of the GDR",
         optionD: "There is no 'Currywurst' in the city",
         correctOption: "optionD"
     },
@@ -254,7 +254,7 @@ function checkForAnswer() {
   //checking if checked radio button is same as answer
   options.forEach((option) => {
       if (option.checked === true && option.value === currentQuestionAnswer) {
-          document.getElementById(correctOption).style.backgroundColor = "green"
+          document.getElementById(correctOption).style.backgroundColor = "#90EE90"
           playerScore++
           indexNumber++
           //set to delay question number till when next question loads
@@ -265,8 +265,8 @@ function checkForAnswer() {
 
       else if (option.checked && option.value !== currentQuestionAnswer) {
           const wrongLabelId = option.labels[0].id
-          document.getElementById(wrongLabelId).style.backgroundColor = "red"
-          document.getElementById(correctOption).style.backgroundColor = "green"
+          document.getElementById(wrongLabelId).style.backgroundColor = "#FFB6C1"
+          document.getElementById(correctOption).style.backgroundColor = "#90EE90"
           wrongAttempt++
           indexNumber++
           //set to delay question number till when next question loads

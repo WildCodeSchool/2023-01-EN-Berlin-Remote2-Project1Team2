@@ -43,13 +43,15 @@
   font-size: large;
 }
 
-
+#id  {
+  
+}
 html{
   height:100%;
 }
 
 body {
-  background-color: #E9E9E9;
+  background-color:var(--chess1);
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #333;
@@ -346,6 +348,7 @@ background-color: var(--chess2);
       cursor: pointer;
       transition: transform 0.3s;
       font-weight: 600;
+      font-size: medium;
       color: rgb(22, 22, 22);
   }
   
@@ -592,6 +595,7 @@ ul {
         background-color: var(--primary-color);
     }
     #text {
+      background-color: rgba(255, 255, 255, 0.5);
         display: flex;
         justify-content: center;
         align-items: flex-end;
