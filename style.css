@@ -1,10 +1,15 @@
 :root {
-  --primary-color: #1c1a1a;
+  --primary-color: #333;
+  --background-color:#1C1A1A;
+  --chess1:#F7F7F7 ;
+  --chess2: #E6F1F6;
 }
 
 * {
   margin: 0;
   padding: 0;
+  margin-left: 20%;
+  margin-right: 20%;
   scroll-behavior: smooth;
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
@@ -16,15 +21,27 @@
 
 }
  
+
 .chess-row-1 {
   display:flex;
   flex-direction: row;
+  text-indent: 25px;
+  background-color: var(--chess1);
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: large;
 }
 .chess-row-2{
   flex-direction:row-reverse;
   display:flex;
+  text-indent: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: var(--chess2);
+  text-decoration: none;
+  font-size: large;
 }
- 
 
 
 html{
@@ -64,7 +81,7 @@ nav {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  background: #360033;
+  background:var(--background-color);
 }
 
 ul {
@@ -261,13 +278,13 @@ a.nav-link:hover {
     justify-content: center;
     align-items: center;
     background: rgb(2,0,36);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,126,1) 50%, rgba(0,212,255,1) 100%);
+background-color: var(--chess2);
     }
 
     .game-quiz-container{
       width: 40rem;
       height: 30rem;
-      background-color: lightgray;
+      background-color: var(--chess1);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -367,7 +384,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(15,15,126,1) 50%, rgb
       outline: none;
   }
   .next-button-container button:hover{
-      background-color: rgb(143, 93, 93);
+      background-color: rgb(138, 124, 124);
   }
   
   .modal-container{
@@ -546,6 +563,15 @@ ul {
 
 }
 
+#img_chess {
+  max-width: 50%;
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 
 .floatTop, .floatBottom {
     display: flex;
@@ -562,22 +588,44 @@ ul {
         background-position: center;
         text-align: center;
         font-size: 20px;
-        color: white;
+        color: black;
+        background-color: var(--primary-color);
     }
     #text {
         display: flex;
         justify-content: center;
         align-items: flex-end;
         margin-bottom: 15px;
-    }
+          font-size: medium;
+          display: flex;
+          justify-content: center;
+          align-items: flex-end;
+          margin-bottom: 15px;
+          color:black;
+      }
+      
+      @media (max-width: 576px) {
+        .box1, .box2, .box3, .box4 {
+          width: 100%;
+        }
+      }
+      .box1:hover, .box2:hover, .box3:hover, .box4:hover {
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+      }
     
 
     .container4 > div{
       display:flex;
+      background-color: var(--chess2);
+      border-radius: 15px;
+    
     }
+    
 /* used random sizes just for testing */
     
-    .chesse div img{
+    .chess div img{
       width:400px;
       height:400px;
     }
@@ -611,6 +659,11 @@ ul {
     } */
 main {
     padding: 20px;
+   
+}
+.main1 {
+  background-color: var(--chess2);
+  border-radius: 10px;
 }
 
 
@@ -619,40 +672,6 @@ main {
 
 
 /* end of your styles add comments */
-
-
-/* slider styles */
-
-/* styles for slides */
-
-@keyframes slidy {
-    0% { left: 0%; }
-    20% { left: 0%; }
-    25% { left: -100%; }
-    45% { left: -100%; }
-    50% { left: -200%; }
-    70% { left: -200%; }
-    75% { left: -300%; }
-    95% { left: -300%; }
-    100% { left: -400%; }
-    }
-    
-    body { margin: 0; } 
-    div#slider { overflow: hidden; }
-    div#slider figure img { width: 20%; float: left; }
-    div#slider figure { 
-      position: relative;
-      width: 500%;
-      margin: 0;
-      left: 0;
-      text-align: left;
-      font-size: 0;
-      animation: 30s slidy infinite; 
-    }
-    
-
-/* styles for slides */
-
 
 /* navigation styles big screen*/
 
@@ -694,8 +713,9 @@ a :hover{
 }
   
 .mermaid {
-  background-color: lightgray;
-  margin:auto;
+  background-color: var(--chess1);
+  margin-left:  52px;
+  margin-right: 52px;
 }
 h1, h2{
   text-align: center;
@@ -708,9 +728,12 @@ h3 {
 }
 p {
     text-indent: 25px;
-    
-}
-
+    margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  font-size: large;
+ }
+  
 
 ul {
   margin-bottom: 0;
@@ -728,14 +751,18 @@ ul {
 /* 4 boxes*/
 .container4 {
   margin: 20px;
+  border-radius: 15px;
+  
 }
+
 .floatTop, .floatBottom {
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0;
+    
     padding: 0;
-    gap: 20px;
+    gap: 30px;
     }
     
     .box1, .box2, .box3, .box4 {
@@ -746,38 +773,32 @@ ul {
         text-align: center;
         font-size: 20px;
         color: white;
-        gap: 20px;
-        
+        gap: 30px;
+        border-radius: 15px;
        
-    }
-    #text {
-        font-size: medium;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-bottom: 15px;
     }
     
      
     .box1 {
-      background-image: url("assets/red-light.jpg");
+      background-image: url("assets/victory.jpg");
       background-size: 30vp;
+     
   }
   
   .box2 {
-    background-image: url("assets/berlin.jpg");
+    background-image: url("assets/ratusha.jpg");
       float: right;
       background-color: burlywood;
   }
   
   .box3 {
-    background-image: url("assets/tv-tower.jpg");
+    background-image: url("assets/gate.jpg");
       float: left;
       background-color: lightpink;
   }
   
   .box4 {
-    background-image: url("assets/market-halle.jpg");
+    background-image: url("assets/berlin0.jpg");
       float: right;
       background-color: darksalmon;}
 main {
