@@ -686,6 +686,10 @@ main {
     width: 90%;
     margin: 0 auto;}
 
+    .quiz-cont{
+      width:91%;
+      margin:0 auto;
+    }
 
 body {
   height: 100vh;
@@ -855,6 +859,8 @@ a.nav-link {
 }
 /* footer*/
 footer{
+  margin:0 auto;
+  width:91%;
   height: 422px;
   color:#F2F2F2;
   background-color:#1c1a1a;
@@ -1118,3 +1124,19 @@ a.nav-link:hover {
 
 /* end of scrollbar styles */
 
+.chess-cont{
+  width:100%;
+  margin:0 auto;
+}
+h1{
+  width:90%;
+}
+
+.container4 > div{
+  width:100%;
+
+}
+
+.container4{
+margin:0 auto;
+}
