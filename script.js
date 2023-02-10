@@ -19,3 +19,5 @@ $(document).ready(function () {
 
 
 
+// for (img.lazy of document.querySelectorAll("img:not(img[src])"))
+// img.lazy.src = lazyImage.dataset.src;
