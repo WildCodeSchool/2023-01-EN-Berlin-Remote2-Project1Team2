@@ -711,7 +711,6 @@ ul {
      
     .box1 {
       background-image: url("assets/victory.jpg");
-      background-size: 30vp;
      
   }
   
@@ -1137,7 +1136,71 @@ margin:0 auto;
   }
 }
 
+@media screen and (max-width: 796px){
+  
+  .chess-row-1 p, .chess-row-2 p{
+    padding:10px 20px 0px 20px;
+    text-align:center;
+    font-size:0.95em;
+  }
+  .chess-row-1 p{
+    padding-bottom:5px;
+  }
+  .chess-row-1 h2, .chess-row-2 h2{
+    padding:30px 10px 10px 10px;
+    text-align:center;
+    font-size:0.95em;
+  }
+  .chess-row-1 li, .chess-row-2 li{
+    font-size:0.95em;
+    padding:10px 20px;
+    text-align:center;
+}
+footer p:first-child{
+  font-size:1.2em;
+}
+.paragraph:last-child{
+  padding-bottom:15px;
+}
+.box1, .box2, .box3, .box4{
+  min-width: 90%;
+  margin:0;
+}
+.floatBottom, .floatTop{
+  margin:0 0 5px 0;
+}
+#img_chess{
+  width:70%;
+}
+.container{
+  width:100%;
+}
+.responsive{
+  padding:0;
+}
+
+/* .floatTop, .floatBottom{
+  width:50%;
+} */
+
+}
 /* end nav styles smaler screen */
+@media screen and (min-width: 795px) {
+  .chess-row-1 p, .chess-row-2 p, .chess-row-1 li, .chess-row-2 li{
+    padding:5px 10px 10px 10px;
+  }
+  .chess-row-1 p, .chess-row-2 p{
+    padding:5px 20px;
+    text-align:center;
+  }
+  .chess-row-1 h2, .chess-row-2 h2{
+    padding-top:30px;
+    padding-bottom:10px;
+    text-align:center;
+  }
+ 
+}
+
 @media screen and (max-width: 620px) {
   a.nav-link {
     padding: 0.75rem 0;
@@ -1148,6 +1211,17 @@ margin:0 auto;
     align-items: center;
   
     
+  }
+
+  .hamburger{
+    position:sticky;
+    top:0;
+    left:40%;
+  }
+  .hamburger.active{
+    position:sticky;
+    top:0;
+    left:40%;
   }
 
   .floatTop{
@@ -1174,11 +1248,131 @@ margin:0 auto;
     width:450px;
     height:260px;
   }
+  .chess-row-1, .chess-row-2{
+    flex-direction:column-reverse;
+  }
+  .chess-row-1 img, .chess-row-2 img{
+    min-width:100%;
+    object-fit: contain;
+    object-position:top;
+  }
+  .chess-row-1 h2, .chess-row-2 h2{
+    padding:10px 0;
+  }
+  .chess-row-1 p, .chess-row-2 p, .chess-row-1 li, .chess-row-2 li{
+    padding:5px 20px;
+    text-align:center;
+  }
+  .chess-row-1 li, .chess-row-2 li{
+    list-style-type: none;
+  }
+  .container, .container4, section#quiz, .mermaid{
+    width:100%;
+  }
+  .merm img{
+    min-width: 100%;
+    margin:0;
+    padding:0;
+  }
+  main{padding:0;
+  }
+  footer{
+    height:200px;
+    padding:0;
+  }
+   footer p:first-child{
+    padding-top:30px;
+    margin:0;
+    font-size:18px;
+  }
+  footer a{
+    padding: 0 10px 10px 10px;
+  }
+  footer p:last-child{
+    padding-top:10px;
+    padding-bottom:0;
+    margin:0;
+    font-size:16px;
+    }
 }
 /* nav styles 480px screen */
 
-@media screen and (max-width: 480px) {
+@media screen and (min-width: 480px) {
+
+  nav, .container, section#quiz, .chess-cont, .contaier4, #slider{
+    width:100%;
+  }
+  .responsive{
+    padding:0;
+  }
+  .hamburger{
+    position:sticky;
+    left:0;
+  }
+  .hamburger.active{
+    position:sticky;
+    left:0;
+  }
+  .logo{
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width:200px) and (max-width: 479px) {
   a.nav-link {
     padding: 0.75rem 0;
   }
+  nav, #more, .container, section#quiz, .chess-cont, .chess-row-1 img, .chess-row-2 img, .contaier4, #slider figure .navbar, #slider{
+    width:100%;
+  }
+  div.responsive{
+    padding:0;
+    width:100%;
+  }
+  main{
+    margin:10px 0 0 64px;
+  }
+  .chess-cont {
+    width:380px;
+  }
+  .container4, .container{
+    margin:0 auto;
+  }
+  .merm{
+    width:320px;
+  }
+  .merm img{
+    min-width:100%;
+  }
+  .game-quiz-container{
+    width:300px;
+  }
+  div#slider{
+    margin:0px auto;
+  }
+
+ #img-chess{
+  max-width:100%;
+ }
+  body{
+    margin:0 auto;
+  }
+  #slider, nav{
+    width:400px;
+  }
+  nav{
+    height:80px;
+    margin:0;
+    padding:32px;
+  }
+  .hamburger{
+    
+  }
+  .hamburger.active{
+    
+  }
+  .logo{
+    font-size: 14px;
+  }
+ 
 }

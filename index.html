@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" /> -->
     <title>Document</title>
 </head>
 <body onload="NextQuestion(0)">
@@ -34,7 +34,7 @@
             </div>
           </nav>
 <!-- end of navigation -->
-    
+
 
     <!--   slider-->
 
@@ -48,7 +48,9 @@
     <img src="assets/555.jpg" alt>
     </figure>
     </div>
+    
     <h1 id="information" class ="main fade-in">Welcome to Berlin: Your Guide to the City </h1>
+</div>
     <div class="container4 fade-in">
         <div class="floatTop">
             <a href="#box1"><p  class="box1" id="text">Dive into history</p></a>
@@ -61,11 +63,11 @@
     </div>   
          <!--   chess -->
 <div class="chess-cont">
-    <div class="">
+    <div class="responsive">
         <!-- display flex for chess-row-1 and direction row -->
     <div class="chess-row-1 fade-in">
         <!--   class="box1" -->
-        <div class="">
+        <div class="all-cont">
 
             <h2 id="box1" class="">Berlin: A Rich and Fascinating History</h2>
             <p class="paragraph">
@@ -141,22 +143,11 @@
     </div>
 </div>    
  
-<main id="chart"> 
-<!-- p1 -->
-<!-- p2 -->
-    <!-- p3 -->
-      <!-- p4 -->
-    
-    <!-- Mermaid -->
+<main> 
 
 
-
-<div class="mermaid fade-in">
-  pie title Why people come to Berlin?
-      "For it's historical value" : 20
-      "Get a donner" : 25
-      "Clubbing " : 170
-      "Also clubbing but in a different color" : 145
+<div class="merm fade-in">
+  <img src="assets/mermaid.png" alt="An image showing why people come to Berlin displayed on a pie chart">
   </div>
 
 
@@ -266,7 +257,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="script.js"></script>
 <script src="script2.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
 
 </body>
 </html>
