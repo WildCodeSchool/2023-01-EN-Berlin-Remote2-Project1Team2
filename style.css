@@ -3,36 +3,7 @@
   --background-color:#1C1A1A;
   --chess1:#F7F7F7 ;
   --chess2: #E6F1F6;
-  
 }
-
-
-@media screen and (prefers-color-scheme: dark) {
-  :root {
-    --background-color: #333;
-    --text-color: #fff;
-    --chese1: #ddd;
-  }
-}
-
-@media screen and (prefers-color-scheme: light) {
-  :root {
-    --background-color: #fff;
-    --text-color: #333;
-    --chese1: #000;
-  }
-}
-
-.text-with-background {
-  background-color: rgba(255, 255, 255, 0.5);
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: var(--chese1);
-}
-
 
 * {
   margin: 0;
@@ -43,8 +14,6 @@
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
-
-
 
 .container{
     width: 100%;
@@ -57,7 +26,7 @@
   display:flex;
   flex-direction: row;
   text-indent: 25px;
-  background-color: var(--chess1);
+  background-color: var(--chess2);
   margin-left: 20px;
   margin-right: 20px;
   text-decoration: none;
@@ -69,7 +38,7 @@
   text-indent: 25px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: var(--chess2);
+  background-color: var(--chess1);
   text-decoration: none;
   font-size: large;
 }
@@ -80,7 +49,7 @@ html{
 }
 
 body {
-  background-color:var(--chess1);
+  background-color: #E9E9E9;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   color: #333;
@@ -174,7 +143,7 @@ a.nav-link:hover {
   margin: 6px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background-color: #fff;
+  background-color:white;
 }
 
 .bar:nth-child(1) {
@@ -309,13 +278,13 @@ a.nav-link:hover {
     justify-content: center;
     align-items: center;
     background: rgb(2,0,36);
-background-color: var(--chess2);
+background-color: var(--chess1);
     }
 
     .game-quiz-container{
       width: 40rem;
       height: 30rem;
-      background-color: var(--chess1);
+      background-color: var(--chess2);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -377,7 +346,6 @@ background-color: var(--chess2);
       cursor: pointer;
       transition: transform 0.3s;
       font-weight: 600;
-      font-size: medium;
       color: rgb(22, 22, 22);
   }
   
@@ -624,7 +592,6 @@ ul {
         background-color: var(--primary-color);
     }
     #text {
-      background-color: rgba(255, 255, 255, 0.5);
         display: flex;
         justify-content: center;
         align-items: flex-end;
@@ -648,13 +615,6 @@ ul {
         cursor: pointer;
       }
     
-
-    .container4 > div{
-      display:flex;
-      background-color: var(--chess2);
-      border-radius: 15px;
-    
-    }
     
 /* used random sizes just for testing */
     
@@ -671,25 +631,7 @@ ul {
     }
     /* commented the old classes for now
     
-    .box1 {
-        float: left;
-    
-    }
-    
-    .box2 {
-        float: right;
-    
-    }
-    
-    .box3 {
-        float: left;
-    
-    }
-    
-    .box4 {
-        float: right;
-    
-    } */
+  
 main {
     padding: 20px;
    
@@ -698,13 +640,6 @@ main {
   background-color: var(--chess2);
   border-radius: 10px;
 }
-
-
-
-
-
-
-/* end of your styles add comments */
 
 /* navigation styles big screen*/
 
@@ -717,7 +652,9 @@ main {
 
 .container{
     width: 90%;
-    margin: 0 auto;}
+    margin: 0 auto;
+  background-color: var(--chess1);}
+  
 
 
 body {
@@ -788,6 +725,18 @@ ul {
   
 }
 
+.container4 > div{
+  display:flex;
+  background-color: var(--chess1);
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  justify-content: center;
+}
+.floatTop{
+  margin-top: 20px;
+}
 .floatTop, .floatBottom {
     display: flex;
     justify-content: center;
@@ -1112,7 +1061,6 @@ a.nav-link:hover {
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
-
 .fade-in-menu-vis{
   opacity: 1;
   transform: none;

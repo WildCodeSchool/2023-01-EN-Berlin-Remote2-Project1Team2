@@ -13,10 +13,10 @@ const questions = [
     },
     {
         question: "Which statement about Berlin is wrong ?",
-        optionA: "Capital of the Federal Republic of Germany",
-        optionB: "One of Germany's 16 federal states",
-        optionC: "East Berlin was the capital of the GDR",
-        optionD: "There is no 'Currywurst' in the city",
+        optionA: "Capital of of Germany",
+        optionB: "One of 16 federal states",
+        optionC: "Bear is Berlin's symbol",
+        optionD: "There is no 'Currywurst'",
         correctOption: "optionD"
     },
     {
@@ -48,7 +48,7 @@ const questions = [
         optionA: "Berlin",
         optionB: "Wuppertal",
         optionC: "Hamburg",
-        optionD: "POtsdam",
+        optionD: "Potsdam",
         correctOption: "optionA"
     },
     {
@@ -61,28 +61,28 @@ const questions = [
     },
   {
       question: "When did Berlin originally become a prominent city ?",
-      optionA: "In the 13th century",
+      optionA: "In 1939",
       optionB: "In the 11th century",
       optionC: "In the 14th century",
-      optionD: "In the 12th century",
+      optionD: "When kebab invented",
       correctOption: "optionC"
   },
 
   {
       question: "How was Berlin divided during WWII ?",
-      optionA: "Into three occupied zones",
-      optionB: "Into five occupied zones",
-      optionC: "Into four occupied zones",
-      optionD: "Into two occupied zones",
+      optionA: "Into 3 occupied zones",
+      optionB: "Into 5 occupied zones",
+      optionC: "Into 4 occupied zones",
+      optionD: "Into 2 occupied zones",
       correctOption: "optionA"
   },
 
   {
       question: "When was the Berlin Wall erected ?",
       optionA: "In 1961",
-      optionC: "In 1949",
+      optionC: "In 1849",
       optionB: "In 1965",
-      optionD: "In 1963",
+      optionD: "In 1663",
       correctOption: "optionA"
   },
 
@@ -90,16 +90,16 @@ const questions = [
       question: "What did the fall of the Berlin Wall mark the end of ?",
       optionA: "The Cold War",
       optionB: "The First World War",
-      optionC: "The Second World Wa",
+      optionC: "The Second World War",
       optionD: "The Nuclear War",
       correctOption: "optionA"
   },
 
   {
       question: "What is Berlin known for today ?",
-      optionA: "Its politics",
-      optionB: "Its culture and commerce",
-      optionC: "Its nightlife",
+      optionA: "Politics",
+      optionB: "Culture and commerce",
+      optionC: "Nightlife",
       optionD: "Its history and arts",
       correctOption: "optionB"
   },
@@ -133,19 +133,19 @@ const questions = [
 
   {
       question: "How many bars and clubs does Berlin have ?",
-      optionA: "1500",
+      optionA: "150",
       optionB: "2000",
       optionC: "2500",
-      optionD: "3000",
+      optionD: "30000",
       correctOption: "optionB"
   },
 
   {
       question: `"What was Berlin a center of in the 1980s`,
-      optionA: "The rock music scene",
-      optionB: "The punk music scene",
-      optionC: "The techno music scene",
-      optionD: "The jazz music scene",
+      optionA: "Rock music scene",
+      optionB: "Punk music scene",
+      optionC: "Techno music scene",
+      optionD: "Jazz music scene",
       correctOption: "optionC"
   },
 
@@ -170,16 +170,16 @@ const questions = [
 
   {
       question: "What type of shopping options does Berlin have ?",
-      optionA: "Large department stores only",
-      optionB: "Unique boutiques only",
-      optionC: "A variety of options",
+      optionA: "Beer shops",
+      optionB: "Posh boutiques only",
+      optionC: "Anything you want",
       optionD: "Small shops only",
       correctOption: "optionC"
   },
 
   {
       question: "What is a famous indoor market in Berlin ?",
-      optionA: "Market Place Berlin",
+      optionA: "Turkish Market",
       optionB: "Shibuya",
       optionC: "Markthalle Neun",
       optionD: "Privoz",
