@@ -3,6 +3,7 @@
   --background-color:#1C1A1A;
   --chess1:#F7F7F7 ;
   --chess2: #E6F1F6;
+  --dark-mode: #9F9D9E;
 }
 
 * {
@@ -1007,16 +1008,6 @@ a.nav-link:hover {
   position:relative;
   top:17px;
 }
-}
-
-
-
-
-@media screen and (max-width: 480px) {
-  a.nav-link {
-    padding: 0.75rem 0;
-  }
-
 }
 
 
