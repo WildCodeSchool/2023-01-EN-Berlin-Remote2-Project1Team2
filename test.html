@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <main>
+      <div class="container4 fade-in">
+        <div class="floatTop">
+          <div class="img-container">
+            <img id="box" src="assets/victory.jpg">
+            <p id="text">Dive into history</p>
+          </div>
+          <div class="img-container">
+            <img id="box" src="assets/ratusha.jpg" alt="">
+            <p id="text">Good to know</p>
+          </div>
+        </div>
+        <div class="floatBottom">
+          <div class="img-container">
+            <p id="text">Let`s plan your trip</p>
+            <img id="box" src="assets/gate.jpg">
+          </div>
+          <div class="img-container">
+            <p id="text">For food lovers</p>
+            <img id="box" src="assets/berlin0.jpg">
+            
+          </div>
+        </div>
+      </div>
+      
+      <style>
+        /* 4 boxes*/
+        .container4 {
+          margin: 20px;
+          border-radius: 15px;
+        }
+      
+        .container4 > div{
+          display:flex;
+          background-color: var(--chess1);
+          border-radius: 15px;
+          margin-left: 20px;
+          margin-right: 20px;
+          text-decoration: none;
+          justify-content: center;
+        }
+      
+        .floatTop{
+          margin-top: 20px;
+        }
+      
+        .floatTop, .floatBottom {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin:0;
+          padding: 0;
+          gap: 30px;
+        }
+      
+        #box {
+          max-width: 300px;
+          max-height: 400px;
+        }
+      
+        .img-container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+        }
+      </style>
+      
+</head>
+<body>
+    
+</body>
+</html>
