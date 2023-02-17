@@ -1352,3 +1352,54 @@ footer p:first-child{
   }
  
 }
+
+@media (prefers-color-scheme:dark){
+  :root {
+    --primary-color: #333;
+    --background-color:#1C1A1A;
+    --chess1:#F7F7F7 ;
+    --chess2: #E6F1F6;
+    --dark-mode: #9F9D9E;
+  }
+  
+  h1{
+    background-color:#333;
+    color:white;
+  }
+  .floatBottom, .floatTop{
+    background-color:#333 !important;
+    
+  }
+  .floatBottom div, .floatTop div{
+    border-radius:none;
+  }   
+  .container4{
+    background-color:#333;
+  } 
+  #quiz{
+    background-color:#333;
+  }
+  #quiz h1{
+    background-color:initial;
+    color:black;
+  }
+  div.responsive{
+    background-color:#333;
+  }
+  div.responsive h2{
+    background-color:#333;
+    color:white;
+  }
+  div.responsive p{
+    background-color:#333;
+    color:white;
+  }
+  .chess-cont div{
+    background-color:#333;
+    color:white;
+  }
+  .chess-cont ul, .chess-cont span, .chess-cont a{
+    background-color:#333;
+    color:white;
+  }
+}
