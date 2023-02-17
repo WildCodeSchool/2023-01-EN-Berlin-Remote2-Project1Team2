@@ -12,8 +12,10 @@
     cursor: pointer;
     padding: 15px;
     border-radius: 4px;
+    opacity:0.5;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: black;
+    opacity:1;
   }
