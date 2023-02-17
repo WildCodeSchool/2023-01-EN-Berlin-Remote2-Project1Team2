@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="dark light">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <!-- <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" /> -->
-    <title>Document</title>
+    <title>Explore Berlin</title>
 </head>
 <body onload="NextQuestion(0)">
     <!-- start navigation div -->
@@ -49,18 +49,30 @@
     </figure>
     </div>
     
-    <h1 id="information" class ="main fade-in">Welcome to Berlin: Your Guide to the City </h1>
 </div>
     <div class="container4 fade-in">
+        <h1 class ="main fade-in">Welcome to Berlin: Your Guide to the City </h1>
         <div class="floatTop">
-            <a href="#box1"><p  class="box1" id="text">Dive into history</p></a>
-            <a href="#box2"><p class="box2" id="text"> Good to know</p></a>
+          <div class="img-container">
+            <img id="box" src="assets/victory.jpg">
+            <a href="#box1"> <p class="box1" id="text">Dive into history</p></a>
+          </div>
+          <div class="img-container">
+            <img id="box" src="assets/ratusha.jpg" alt="">
+            <a href="#box2"> <p class="box2" id="text"> Good to know</p></a>
+          </div>
         </div>
         <div class="floatBottom">
-            <a href="#box3"><p  class="box3" id="text">Let`s plan your trip</p></a>
-            <a href="#box4"><p  class="box4" id="text">For food lovers</p></a>
+          <div class="img-container">
+            <img id="box" src="assets/gate.jpg">
+            <a href="#box3"> <p  class="box3" id="text">Let`s plan your trip</p></a>
+          </div>
+          <div class="img-container">
+            <img id="box" src="assets/berlin0.jpg">
+            <a href="#box4"> <p  class="box4" id="text">For food lovers</p></a>
+          </div>
         </div>
-    </div>   
+      </div>  
          <!--   chess -->
 <div class="chess-cont">
     <div class="responsive">
@@ -80,7 +92,7 @@
             It's a destination with a rich history, vibrant cultural scene, and something for everyone.
             </p>
         </div>
-            <img id="img_chess" class="lozad img.lazy"  src="assets/potsdamer-platz.jpg" alt="Berlin facts">
+            <img id="img_chess" src="assets/obembraum.jpg" alt="Berlin facts">
     </div>
     </div>
 
@@ -98,7 +110,7 @@
         <li> Berlin was a center of the underground techno music scene in the 1980s, and is still a hub for techno music today.</li>
         </p>
     </div>
-    <img id="img_chess" class="lozad img.lazy"  src="assets/boxhangener-platz.jpg">
+    <img id="img_chess" src="assets/boxhangener-platz.jpg">
     </div>
     </div>
     
@@ -117,7 +129,8 @@
         
             </p>
         </div>
-        <img id="img_chess" class="lozad fade img.lazy"  src="assets/prenzlauer-berg.jpg">
+        <img id="img_chess" src="assets/prenzlauer-berg.jpg">
+
     </div>
        
     </div>
@@ -135,7 +148,7 @@
             <!-- for here we can add a link on hover on the place's name -->
             </p>
         </div>
-        <img id="img_chess" class="lozad img.lazy"  src="assets/hackeshe-hofe.jpg">
+        <img id="img_chess" src="assets/hackeshe-hofe.jpg">
         </div>
         </div>
         
@@ -146,7 +159,7 @@
 <main> 
 
 
-<div class="merm fade-in">
+<div id="chart" class="merm fade-in">
   <img src="assets/mermaid.png" alt="An image showing why people come to Berlin displayed on a pie chart">
   </div>
 
@@ -256,7 +269,6 @@
 <script src="quiz.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="script.js"></script>
-<script src="script2.js"></script>
 
 </body>
 </html>

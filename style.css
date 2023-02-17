@@ -3,6 +3,7 @@
   --background-color:#1C1A1A;
   --chess1:#F7F7F7 ;
   --chess2: #E6F1F6;
+  --dark-mode: #9F9D9E;
 }
 
 * {
@@ -26,7 +27,7 @@
   display:flex;
   flex-direction: row;
   text-indent: 25px;
-  background-color: var(--chess1);
+  background-color: var(--chess2);
   margin-left: 20px;
   margin-right: 20px;
   text-decoration: none;
@@ -38,7 +39,7 @@
   text-indent: 25px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color: var(--chess2);
+  background-color: var(--chess1);
   text-decoration: none;
   font-size: large;
 }
@@ -143,7 +144,7 @@ a.nav-link:hover {
   margin: 6px;
   -webkit-transition: 0.5s;
   transition: 0.5s;
-  background-color: #fff;
+  background-color:white;
 }
 
 .bar:nth-child(1) {
@@ -204,13 +205,13 @@ a.nav-link:hover {
     justify-content: center;
     align-items: center;
     background: rgb(2,0,36);
-background-color: var(--chess2);
+background-color: var(--chess1);
     }
 
     .game-quiz-container{
       width: 40rem;
       height: 30rem;
-      background-color: var(--chess1);
+      background-color: var(--chess2);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -499,55 +500,56 @@ ul {
 }
 
 
+/* 4 boxes*/
+.container4 {
+  margin: 20px;
+  border-radius: 15px;
+}
+
+.container4 > div{
+  display:flex;
+  background-color: var(--chess1);
+  border-radius: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-decoration: none;
+  justify-content: center;
+}
+.floatTop{
+  margin-top: 20px;
+}
+
 .floatTop, .floatBottom {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    }
-    /* had to re-arrange the box1-box4 parts so that they could work with lazyload */
-    .box1, .box2, .box3, .box4 {
-        width: 50%;
-        height: 300px;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        font-size: 20px;
-        color: black;
-        background-color: var(--primary-color);
-    }
-    #text {
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
-        margin-bottom: 15px;
-          font-size: medium;
-          display: flex;
-          justify-content: center;
-          align-items: flex-end;
-          margin-bottom: 15px;
-          color:black;
-      }
-      
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+  padding: 0;
+  gap: 30px;
+}
+
+#box {
+  max-width: 300px;
+  max-height: 400px;
+  border-radius: 15px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+.text:hover {
+  transform: scale(1.1);
+}
       @media (max-width: 576px) {
-        .box1, .box2, .box3, .box4 {
+        .container4 {
           width: 100%;
         }
       }
-      .box1:hover, .box2:hover, .box3:hover, .box4:hover {
-        transform: scale(1.1);
-        transition: transform 0.3s ease-in-out;
-        cursor: pointer;
-      }
-    
-
-    .container4 > div{
-      display:flex;
-      background-color: var(--chess2);
-      border-radius: 15px;
-    
-    }
     
 /* used random sizes just for testing */
     
@@ -564,25 +566,7 @@ ul {
     }
     /* commented the old classes for now
     
-    .box1 {
-        float: left;
-    
-    }
-    
-    .box2 {
-        float: right;
-    
-    }
-    
-    .box3 {
-        float: left;
-    
-    }
-    
-    .box4 {
-        float: right;
-    
-    } */
+  
 main {
     padding: 20px;
    
@@ -591,13 +575,6 @@ main {
   background-color: var(--chess2);
   border-radius: 10px;
 }
-
-
-
-
-
-
-/* end of your styles add comments */
 
 /* navigation styles big screen*/
 
@@ -610,7 +587,9 @@ main {
 
 .container{
     width: 90%;
-    margin: 0 auto;}
+    margin: 0 auto;
+  background-color: var(--chess1);}
+  
 
     .quiz-cont{
       width:91%;
@@ -685,31 +664,53 @@ ul {
   
 }
 
-.floatTop, .floatBottom {
+/* .container4 > div{
+  /* 4 boxes*/
+  /* .container4 {
+    margin: 20px;
+    border-radius: 15px;
+  } */
+
+  .container4 > div{
+    display:flex;
+    background-color: var(--chess1);
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    justify-content: center;
+  }
+
+  .floatTop{
+    margin-top: 20px;
+    display:flex;
+  justify-content: flex-start;  }
+
+  .floatTop, .floatBottom {
     display: flex;
     justify-content: center;
     align-items: center;
     margin:0;
-    
     padding: 0;
     gap: 30px;
-    }
-    
-    .box1, .box2, .box3, .box4 {
-      width: 320px;
-      height: 180px;
-        background-size: cover;
-        background-position: center;
-        text-align: center;
-        font-size: 20px;
-        color: white;
-        gap: 30px;
-        border-radius: 15px;
+  }
+
+  #box {
+    max-width: 300px;
+    max-height: 400px;
+  }
+
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
        
     }
     
      
-    .box1 {
+    /* .box1 {
       background-image: url("assets/victory.jpg");
      
   }
@@ -729,7 +730,7 @@ ul {
   .box4 {
     background-image: url("assets/berlin0.jpg");
       float: right;
-      background-color: darksalmon;}
+      background-color: darksalmon;} */
 main {
     padding: 20px;
 }
@@ -951,16 +952,6 @@ a.nav-link:hover {
 }
 
 
-
-
-@media screen and (max-width: 480px) {
-  a.nav-link {
-    padding: 0.75rem 0;
-  }
-
-}
-
-
 /* slider styles */
 
 @keyframes slidy {
@@ -1010,7 +1001,6 @@ a.nav-link:hover {
   transition: opacity 0.6s ease-out, transform 1.2s ease-out;
   will-change: opacity, visibility;
 }
-
 .fade-in-menu-vis{
   opacity: 1;
   transform: none;
@@ -1230,24 +1220,15 @@ footer p:first-child{
   .floatBottom{
   padding-bottom:14px;
 }
-  p.box3{
+ 
+  p.box4, p.box2, p.box1,p.box3 {
     width:450px;
-    height:260px;
-    margin-top:30px;
-  }
-  p.box4{
-    width:450px;
-    height:260px;
-  }
-  p.box2{
-    width:450px;
-    height:260px;
-  }
+    height:80px;
+    text-align: center;
+    font-weight: larger;
 
-  p.box1{
-    width:450px;
-    height:260px;
   }
+  
   .chess-row-1, .chess-row-2{
     flex-direction:column-reverse;
   }
@@ -1270,7 +1251,7 @@ footer p:first-child{
     width:100%;
   }
   .merm img{
-    min-width: 100%;
+    min-width: 90%;
     margin:0;
     padding:0;
   }
@@ -1364,12 +1345,6 @@ footer p:first-child{
     height:80px;
     margin:0;
     padding:32px;
-  }
-  .hamburger{
-    
-  }
-  .hamburger.active{
-    
   }
   .logo{
     font-size: 14px;
