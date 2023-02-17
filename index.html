@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,800' rel='stylesheet' type='text/css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
-    <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" />
+    <!-- <link rel="stylesheet" href="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.css" /> -->
     <title>Document</title>
 </head>
 <body onload="NextQuestion(0)">
@@ -20,10 +20,10 @@
             <div class="navbar toshow">
               <ul class="nav-menu">
                 <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Information</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Chart</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">Quiz</a></li>
-                <li class="nav-item"><a href="#" class="nav-link">More Information</a></li>
+                <li class="nav-item"><a href="#information" class="nav-link">Information</a></li>
+                <li class="nav-item"><a href="#chart" class="nav-link">Chart</a></li>
+                <li class="nav-item"><a href="#quiz" class="nav-link">Quiz</a></li>
+                <li class="nav-item"><a href="#more" class="nav-link">More Information</a></li>
               </ul>
             </div>
           
@@ -34,7 +34,7 @@
             </div>
           </nav>
 <!-- end of navigation -->
-    
+
 
     <!--   slider-->
 
@@ -48,25 +48,28 @@
     <img src="assets/555.jpg" alt>
     </figure>
     </div>
-    <h1 class ="main fade-in">Welcome to Berlin: Your Guide to the City </h1>
+    
+    <h1 id="information" class ="main fade-in">Welcome to Berlin: Your Guide to the City </h1>
+</div>
     <div class="container4 fade-in">
         <div class="floatTop">
-            <p class="box1" id="text">Dive into history</p>
-            <p class="box2" id="text">Good to know</p>
+            <a href="#box1"><p  class="box1" id="text">Dive into history</p></a>
+            <a href="#box2"><p class="box2" id="text"> Good to know</p></a>
         </div>
         <div class="floatBottom">
-            <p class="box3" id="text">Let`s plan your trip</p>
-            <p class="box4" id="text">For food lovers</p>
+            <a href="#box3"><p  class="box3" id="text">Let`s plan your trip</p></a>
+            <a href="#box4"><p  class="box4" id="text">For food lovers</p></a>
         </div>
     </div>   
          <!--   chess -->
-<div class="">
-    <div class="">
+<div class="chess-cont">
+    <div class="responsive">
         <!-- display flex for chess-row-1 and direction row -->
     <div class="chess-row-1 fade-in">
         <!--   class="box1" -->
-        <div class="">
-            <h2 class="">Berlin: A Rich and Fascinating History</h2>
+        <div class="all-cont">
+
+            <h2 id="box1" class="">Berlin: A Rich and Fascinating History</h2>
             <p class="paragraph">
             Berlin is the capital of Germany with a rich 800-year history. It originally was a small settlement that grew into a prominent city in the 13th century. 
             During WWII, the city was bombed and divided into four occupied zones by the Allies. 
@@ -77,7 +80,7 @@
             It's a destination with a rich history, vibrant cultural scene, and something for everyone.
             </p>
         </div>
-            <img id="img_chess" class="lozad img.lazy" data-src="assets/potsdamer-platz.jpg" alt="Berlin facts">
+            <img id="img_chess" class="lozad img.lazy"  src="assets/potsdamer-platz.jpg" alt="Berlin facts">
     </div>
     </div>
 
@@ -85,7 +88,7 @@
         <!-- display flex for chess-row-2 and direction row-reverse -->
         <div class="chess-row-2 fade-in">
         <div>
-        <h2>5 facts about Berlin:</h2>
+        <h2 id="box2">5 facts about Berlin:</h2>
         <p class="paragraph">
             
         <li> Berlin is the home to over 180 museums, making it one of the most cultural cities in Europe.</li>
@@ -95,7 +98,7 @@
         <li> Berlin was a center of the underground techno music scene in the 1980s, and is still a hub for techno music today.</li>
         </p>
     </div>
-    <img id="img_chess" class="lozad img.lazy" data-src="assets/boxhangener-platz.jpg">
+    <img id="img_chess" class="lozad img.lazy"  src="assets/boxhangener-platz.jpg">
     </div>
     </div>
     
@@ -103,7 +106,7 @@
         <!-- display flex for chess-row-1 and direction row -->
         <div class="chess-row-1 fade-in">
             <div>
-        <h2>What you can do in Berlin?</h2>
+        <h2 id="box3">What you can do in Berlin?</h2>
         <p class="paragraph">  
 
             <p><span>Explore historical sites:</span> Visit landmarks such as <a href="https://en.wikipedia.org/wiki/Brandenburg_Gate">Brandenburg Gate</a>, <a href="https://www.visitberlin.de/en/checkpoint-charlie">Checkpoint Charlie</a>, and the <a href="https://www.berlin.de/sehenswuerdigkeiten/3560965-3558930-reichstag.html">Reichstag</a> building to learn about Berlin's past.</p>
@@ -114,7 +117,7 @@
         
             </p>
         </div>
-        <img id="img_chess" class="lozad fade img.lazy" data-src="assets/prenzlauer-berg.jpg">
+        <img id="img_chess" class="lozad fade img.lazy"  src="assets/prenzlauer-berg.jpg">
     </div>
        
     </div>
@@ -122,7 +125,7 @@
         <!-- display flex for chess-row-2 and direction row-reverse -->
         <div class="chess-row-2 fade-in">
         <div class="">
-        <h2>Hungry? Let`s find something to eat!</h2>
+        <h2 id="box4">Hungry? Let`s find something to eat!</h2>
         <p class="paragraph">
                 <ul class="linkOnHover">
                 <li><a href="https://markthalleneun.de/Markthalle">Markthalle Neun</a> - This historic indoor market is the perfect place to sample a variety of German and international cuisine.</li>
@@ -132,36 +135,25 @@
             <!-- for here we can add a link on hover on the place's name -->
             </p>
         </div>
-        <img id="img_chess" class="lozad img.lazy" data-src="assets/hackeshe-hofe.jpg">
+        <img id="img_chess" class="lozad img.lazy"  src="assets/hackeshe-hofe.jpg">
         </div>
         </div>
         
 
     </div>
 </div>    
- </div>
+ 
 <main> 
-<!-- p1 -->
-<!-- p2 -->
-    <!-- p3 -->
-      <!-- p4 -->
-    
-    <!-- Mermaid -->
 
 
-
-<div class="mermaid fade-in">
-  pie title Why people come to Berlin?
-      "For it's historical value" : 20
-      "Get a donner" : 25
-      "Clubbing " : 170
-      "Also clubbing but in a different color" : 145
+<div class="merm fade-in">
+  <img src="assets/mermaid.png" alt="An image showing why people come to Berlin displayed on a pie chart">
   </div>
 
 
     </main>
-
-      <section class="fade-in">
+    <div class="quiz-cont">
+      <section id="quiz" class="fade-in">
           <!-- quiz section-->
           <div class="modal-container" id="score-modal">
             
@@ -243,8 +235,9 @@
           </div>
         </section>
         <!-- end of quiz section -->
+    </div>
 
-<footer class="fade-in">
+<footer id="more" class="fade-in">
         <p>Let's Explore Berlin Together!</p>
         <div>
             <i class="fi fi-brands-instagram"></i><a class="animated" href="https://www.instagram.com/berlin/?hl=en" _blank>Instagram</a>
@@ -254,6 +247,7 @@
         </div>
         <p>© 2023 Wild Code School Remote Team 2</p>
 </footer>
+</div>
 
 <!-- script for nav animation -->
 <!-- end of js animation -->
@@ -263,7 +257,6 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
 <script src="script.js"></script>
 <script src="script2.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script>
 
 </body>
 </html>
