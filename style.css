@@ -1220,15 +1220,16 @@ footer p:first-child{
   .floatBottom{
   padding-bottom:14px;
 }
- 
+ #box {
+  margin-bottom: 25px;
+ }
   p.box4, p.box2, p.box1,p.box3 {
     width:450px;
     height:80px;
     text-align: center;
-    font-weight: larger;
+    font-weight:200;
 
   }
-  
   .chess-row-1, .chess-row-2{
     flex-direction:column-reverse;
   }
